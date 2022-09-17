@@ -1,0 +1,119 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+/* css styling for navbar */
+.navbar {
+  position: relative;
+  height: 90px;
+  background-color: gainsboro;
+}
+
+/* logo symbol */
+.rectangle {
+  position: absolute;
+  width: 27px;
+  height: 9px;
+  top: 22px;
+  bottom: 0px;
+
+  background: linear-gradient(96.34deg, #e537b9 0%, #c040df 100%);
+  border-radius: 4.5px;
+}
+
+.text-style {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #292b2e;
+}
+
+.btn {
+  display: flex;
+  padding: 0px;
+  text-align: start;
+  border: none;
+  margin: 10px;
+  box-sizing: none;
+  width: 1000px;
+}
+
+.btn-text {
+  position: relative;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+/* adding effects to button */
+
+.btn-text::before {
+  content: "\f107";
+  color: #737373;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* adding effects to down-arrow button */
+  transform: translateY(-50%);
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+}
+
+.btn-text[aria-expanded="true"]::before {
+  content: "\f106";
+  color: #737373;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 2px;
+  padding: 3px;
+}
+
+#button-title {
+  text-align: start;
+  margin-left: 10px;
+  color: black;
+}
+
+/* eliminating button hovering effects in bootstrap */
+
+#no-hover:focus {
+  box-shadow: none;
+}
+
+/* adding effetcs to carosusel image */
+
+.carousel-img {
+  object-fit: cover;
+  width: 50vw;
+  height: 70vh;
+}
+
+.carousel-img :hover {
+  opacity: 0.5;
+}
+
+/* adding footer class */
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  top: 2rem;
+  background-color: gainsboro;
+  opacity: 0.5;
+}
